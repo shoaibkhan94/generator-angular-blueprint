@@ -20,12 +20,13 @@ module.exports = blueprints.NamedBase.extend({
             destination(this.destDirectory, this.name, 'directive', 'js'), 
             values
         );
-
+/*
         this.copyTpl(
             `directive-spec-${jsVersion}`, 
             'js', 
             destination(this.destDirectory, this.name, 'directive.spec', 'js'), 
             values
         );
+*/
     }
 });

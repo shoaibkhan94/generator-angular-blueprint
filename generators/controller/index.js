@@ -22,12 +22,12 @@ module.exports = blueprints.NamedBase.extend({
             values
         );
 
-        this.copyTpl(
+       /* this.copyTpl(
             'controller-spec-' + jsVersion,
             fileType,
             destination(this.destDirectory, this.name, 'controller.spec', fileType),
             values
-        );
+        );*/
     }
 });
 
