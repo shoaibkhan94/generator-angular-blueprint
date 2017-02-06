@@ -41,12 +41,13 @@ module.exports = blueprints.NamedBase.extend({
             destination(this.destDirectory, this.name, 'route', 'js'), 
             values
         );
-
+/*
         this.copyTpl(
             `controller-spec-${jsVersion}`,
             'js', 
             destination(this.destDirectory, this.name, 'controller.spec', 'js'), 
             values
         );
+*/
     }
 });

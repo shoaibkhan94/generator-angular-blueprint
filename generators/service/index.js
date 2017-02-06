@@ -11,13 +11,13 @@ module.exports = blueprints.NamedBase.extend({
   },
 
   writing: function () {
-    const values = tplOptions(this.config.get('appName'), 'factory', this.name);
+    const values = tplOptions(this.config.get('appName'), 'service', this.name);
     const jsVersion = this.config.get('jsVersion') || 'ES5';
 
     this.copyTpl(
-        `factory-${jsVersion}`, 
+        `service-${jsVersion}`, 
         'js', 
-        destination(this.destDirectory, this.name, 'factory', 'js'), 
+        destination(this.destDirectory, this.name, 'service', 'js'), 
         values
     );
 
